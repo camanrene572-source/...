@@ -122,3 +122,17 @@ footer { text-align: center; padding: 30px; border-top: 1px solid rgba(255,0,51,
 #skill { background: linear-gradient(rgba(0,0,0,0.7), rgba(255,0,51,0.1)), url('images/bg-skill.jpg') no-repeat center/cover; } 
 #project { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/bg-project.jpg') no-repeat center/cover; } 
 #contact { background: linear-gradient(rgba(0,0,0,0.7), rgba(255,0,51,0.2)), url('images/bg-contact.jpg') no-repeat center/cover; }
+
+html {
+  scroll-behavior: smooth; /* smooth scroll pag click sa menu */
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
