@@ -163,3 +163,11 @@ document.addEventListener('DOMContentLoaded', function() {
     makeSlider('projectSlider'); // Kung meron ka nito
 
 });
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    if(sec.getBoundingClientRect().top < 500){
+      sec.classList.add('show');
+    }
+  })
+})
